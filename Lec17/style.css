@@ -1,0 +1,10 @@
+.bg_color{
+    background-color: aquamarine;
+}
+main img{
+    height: 400px;
+    
+}
+.row .col-xl-2{
+    display: flex;
+}

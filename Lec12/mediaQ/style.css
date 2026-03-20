@@ -1,0 +1,34 @@
+/* body{
+    width: 100vw;
+    height: 100pw;
+    background-color: rgb(84, 157, 226);
+} */
+/* @media  print {
+    body{
+        background-color: aqua;
+    }
+    
+} */
+
+/* @media screen and (max-width: 900px) {
+    body{
+        background-color: aquamarine;
+    }
+} */
+
+body{
+    margin: 10px auto;
+    padding: 20px;
+    border:  2px solid black;
+}
+@media all and (orientation: landscape) {
+    h1{
+        color: blueviolet;
+    }
+}
+
+@media all and (orientation: portrait) {
+    h1{
+        color: rgb(13, 197, 238);
+    }
+}

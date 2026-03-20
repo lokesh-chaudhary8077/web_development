@@ -1,0 +1,39 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border-top: 10px solid firebrick;
+    border-bottom: 10px solid rgb(87, 178, 34);
+    border-left: 10px solid rgb(34, 87, 178);
+    border-right: 10px solid rgb(178, 34, 128);
+    border-radius: 60%;
+    margin: 10px auto;
+    
+}
+.box:hover{
+    animation-name: loader,backgroundcolor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes loader {
+    0%{
+        transform: translateY(0px) rotate(0deg);
+    }
+    50%{
+        transform: translateY(600px) rotate(180deg);
+    }
+    100%{
+        transform: translateY(0px) rotate(360deg);
+    }
+}
+@keyframes backgroundcolor {
+    0%{
+        background-color: rgba(255, 166, 0, 0.338);
+    }
+    50%{
+        background-color: rgba(244, 160, 4, 0.637);
+    }
+    100%{
+        background-color: orange;
+    }
+}

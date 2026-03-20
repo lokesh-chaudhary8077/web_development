@@ -1,0 +1,9 @@
+:root{
+    --bg_color_red: #dd4d33;
+    --bg_color_yellow: #b3d811;
+    --font_size: 36px;
+}
+article,h2,h3{
+    background-color: var(--bg_color_yellow);
+    font-size: var(--font_size);
+}

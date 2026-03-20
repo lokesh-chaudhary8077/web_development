@@ -1,0 +1,103 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    font-size: 32px;
+}
+
+/* Input and Button */
+input#title {
+    padding: 10px 15px;
+    width: 280px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input#title:focus {
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+button#add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button#add-btn:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Task List */
+ul#list {
+    list-style: none;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+}
+
+/* Task Items */
+ul#list li {
+    background-color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+ul#list li:hover {
+    background-color: #e8f5e9;        /* Light green background */
+    border-left-color: #2e7d32;       /* Darker green border */
+    color: #2e7d32;                   /* Dark green text */
+    transform: translateX(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Text Shrink on Mobile */
+@media (max-width: 400px) {
+    input#title {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button#add-btn {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

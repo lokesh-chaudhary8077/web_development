@@ -1,0 +1,9 @@
+$('#fadeout').click(function(){
+    $('#container').fadeOut();
+})
+$('#fadein').click(function(){
+    $('#container').fadeIn();
+})
+$('#fadetoggle').click(function(){
+    $('#container').fadeToggle();
+})

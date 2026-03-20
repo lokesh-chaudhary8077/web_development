@@ -1,0 +1,32 @@
+div{
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+.side1{
+    background-color: rgb(238, 150, 35);
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.side2{
+    background-color: rgb(30, 156, 199);
+    transform: rotateY(180deg);
+}
+.wrapper{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    transition: 2s;
+    transform-style: preserve-3d;
+    margin: 30px auto;
+}
+body{
+    perspective: 500px;
+}
+.side1 , .side2{
+    position: absolute;
+}
+.wrapper:hover{
+    transform: rotateY(180deg);
+}

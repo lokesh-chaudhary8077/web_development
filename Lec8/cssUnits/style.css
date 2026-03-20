@@ -1,0 +1,17 @@
+/* Absolute units */
+/* .abs{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+} */
+
+/* Relative units */
+
+.abs{
+  /* font-size: 100%;   parent dependend*/
+  /* font-size: 2em;  parent dependend*/
+  /* font-size: 2rem;  constant*/
+  /* font-size: 6vh;  your view dependend of heigth*/
+  /* font-size: 6vw;  on width*/
+  font-weight: 900;
+}

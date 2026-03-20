@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #sam{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    background-color: aqua;
+} */
+
+.col{
+    background-color: rgb(196, 241, 241);
+    border: 1px solid black;
+}
